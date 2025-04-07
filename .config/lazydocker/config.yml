@@ -1,0 +1,5 @@
+customCommands:
+  containers:
+    - name: attach
+      attach: true
+      command: "docker exec -it {{ .Container.Name }} /bin/bash"
