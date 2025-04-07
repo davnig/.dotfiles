@@ -30,8 +30,8 @@ return {
       end
 
       local palette = require("colors")
-      local text_hl = { fg = palette.gray3 }
-      local icon_hl = { fg = palette.gray4 }
+      local text_hl = { fg = palette.gray5 }
+      local icon_hl = { fg = palette.gray5 }
 
       local theme = require("lualine-theme")
 
@@ -55,25 +55,22 @@ return {
           },
           {
             "diff",
-            icon = { "  " },
             source = diff_source,
-            symbols = {
-              added = " ",
-              modified = " ",
-              removed = " ",
-            },
-            padding = { right = 2 },
+            symbols = { added = "+", modified = "~", removed = "-" },
+            padding = { left = 1, right = 2 },
           },
         },
         lualine_c = {
           {
             parent_folder,
-            icon = { "   " },
+            color = text_hl,
+            icon = { "   ", color = icon_hl },
             separator = "",
             padding = 0,
           },
           {
             get_current_filename,
+            color = text_hl,
             separator = " ",
             padding = 0,
           },
@@ -89,23 +86,20 @@ return {
           },
           {
             "lsp_status",
+            color = text_hl,
             padding = 1,
-            icon = { " " },
+            icon = { " ", color = icon_hl },
           },
         },
-        lualine_y = {},
-        lualine_z = {
-          {
-            "location",
-            icon = { "", align = "left" },
-          },
+        lualine_y = {
+          { "location" },
           {
             "progress",
-            icon = { "", align = "left" },
             -- add rounded separator at the end
             separator = { right = "", left = "" },
           },
         },
+        lualine_z = {},
       }
 
       return opts
