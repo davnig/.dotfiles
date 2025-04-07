@@ -7,7 +7,11 @@ return {
   bg_dark_highlight = "#26282D",
   bg_light = "#2B2D31",
   bg_light_highlight = "#42444A",
+  bg_blue_highlight = "#214283",
   fg_text = "#BBBEC4",
+
+  keyword = "#CF8E6D",
+  method_or_function = "#56A8F5",
   -- END custom colors
 
   none = "NONE",

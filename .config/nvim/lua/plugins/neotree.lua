@@ -16,16 +16,16 @@ return {
           -- ]])
           -- vim.api.nvim_set_hl(0, "NeoTreeFloatBorder", { fg = "#FFFFFF" })
           --
-          local palette = require("colors")
-          -- set popup border color
-          -- vim.api.nvim_set_hl(0, "NeoTreeFloatBorder", { bg = "#1E1F21" })
-          -- vim.api.nvim_set_hl(0, "NeoTreeFloatTitle", { bg = "#1E1F21" })
-          -- vim.api.nvim_set_hl(0, "NeoTreeTitleBar", { bg = "#1E1F21" })
-          -- set cursor bg color
-          vim.api.nvim_set_hl(0, "NeoTreeCursorLine", { bg = palette.bg_light_highlight })
-          -- set general bg when active and not
-          vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = palette.bg_light })
-          vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = palette.bg_light })
+          -- local palette = require("colors")
+          -- -- set popup border color
+          -- -- vim.api.nvim_set_hl(0, "NeoTreeFloatBorder", { bg = "#1E1F21" })
+          -- -- vim.api.nvim_set_hl(0, "NeoTreeFloatTitle", { bg = "#1E1F21" })
+          -- -- vim.api.nvim_set_hl(0, "NeoTreeTitleBar", { bg = "#1E1F21" })
+          -- -- set cursor bg color
+          -- vim.api.nvim_set_hl(0, "NeoTreeCursorLine", { bg = palette.bg_light_highlight })
+          -- -- set general bg when active and not
+          -- vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = palette.bg_light })
+          -- vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = palette.bg_light })
           if package.loaded["neo-tree"] then
             return
           else
