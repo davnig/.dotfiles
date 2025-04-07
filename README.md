@@ -7,3 +7,4 @@ Personal configuration files for various tools and applications, including:
 - Lazydocker
 - Lazygit
 - Ghostty
+- Starship
