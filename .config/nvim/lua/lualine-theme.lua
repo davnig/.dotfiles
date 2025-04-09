@@ -5,13 +5,13 @@ local palette = require("colors")
 
 return {
   normal = {
-    a = { bg = palette.orange.bright, fg = palette.black0, gui = "bold" },
+    a = { bg = palette.vim_normal, fg = palette.black0, gui = "bold" },
     b = { bg = palette.gray1, fg = palette.white1 },
     c = { bg = palette.bg_statusline, fg = palette.white0 },
   },
 
   insert = {
-    a = { bg = palette.green.bright, fg = palette.black0, gui = "bold" },
+    a = { bg = palette.vim_insert, fg = palette.black0, gui = "bold" },
     b = { bg = palette.gray1, fg = palette.white1 },
     c = { bg = palette.bg_statusline, fg = palette.white0 },
   },
@@ -23,13 +23,13 @@ return {
   },
 
   visual = {
-    a = { bg = palette.red.bright, fg = palette.black0, gui = "bold" },
+    a = { bg = palette.vim_visual, fg = palette.black0, gui = "bold" },
     b = { bg = palette.gray1, fg = palette.white1 },
     c = { bg = palette.bg_statusline, fg = palette.white0 },
   },
 
   replace = {
-    a = { bg = palette.magenta.bright, fg = palette.black0, gui = "bold" },
+    a = { bg = palette.vim_replace, fg = palette.black0, gui = "bold" },
     b = { bg = palette.gray1, fg = palette.white1 },
     c = { bg = palette.bg_statusline, fg = palette.white0 },
   },

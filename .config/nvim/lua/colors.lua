@@ -1,13 +1,19 @@
 -- Taken from:
 -- https://github.com/AlexvZyl/nordic.nvim/blob/main/lua/nordic/colors/nordic.lua
 
-return {
+local p = {
   -- START custom colors
   bg_dark = "#1E2021",
   bg_dark_highlight = "#26282D",
   bg_light = "#2B2D31",
   bg_light_highlight = "#42444A",
+
   fg_text = "#BBBEC4",
+
+  vim_normal = "#94a863",
+  vim_insert = "#ecc180",
+  vim_visual = "#769eb3",
+  vim_replace = "#a44a45",
   -- END custom colors
 
   none = "NONE",
@@ -82,3 +88,5 @@ return {
     dim = "#A97EA1",
   },
 }
+
+return p
